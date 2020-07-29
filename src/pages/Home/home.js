@@ -1,15 +1,15 @@
 import React from 'react';
-import Menu from './Componentes/Menu';
-import dadosIniciais from './data/dados_iniciais.json'
-import BannerMain from './Componentes/BannerMain';
-import Carousel from './Componentes/Carousel';
-import Footer from './Componentes/Footer';
+import Menu from '../../Componentes/Menu';
+import dadosIniciais from '../../data/dados_iniciais.json'
+import BannerMain from '../../Componentes/BannerMain';
+import Carousel from '../../Componentes/Carousel';
+import Footer from '../../Componentes/Footer';
 
 
 
 function App() {
   return (
-    <div>
+    <div className="backg">
       <header>
         <Menu />
         
@@ -35,6 +35,21 @@ function App() {
           ignoreFirstVideo
           category={dadosIniciais.categorias[2]}
         />
+
+        <Carousel 
+          ignoreFirstVideo
+          category={dadosIniciais.categorias[3]}
+        />
+
+        <Carousel 
+          ignoreFirstVideo
+          category={dadosIniciais.categorias[4]}
+        />
+        <Carousel 
+          ignoreFirstVideo
+          category={dadosIniciais.categorias[5]}
+        />
+        
       </main>
 
       <footer>
